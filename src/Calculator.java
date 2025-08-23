@@ -52,40 +52,40 @@ public class Calculator {
     }
 
 
-    public static double add(double args, double args1) {
-        return args + args1;
+    public static double add(double num1, double num2) {
+        return num1 + num2;
     }
 
-    public static double multiply(double args, double args1) {
-        return args * args1;
+    public static double multiply(double num1, double num2) {
+        return num1 * num2;
     }
 
-    public static double divide(double args, double args1) {
-        if (args1 == 0) {
-            System.out.println("На нуль блять делить нельзя");
+    public static double divide(double num1, double num2) {
+        if (num2 == 0) {
+            System.out.println("На 0 делить нельзя");
             return 0;
         }
-        return args / args1;
+        return num1 / num2;
     }
 
-    public static double substract(double args, double args1) {
-        return args - args1;
+    public static double substract(double num1, double num2) {
+        return num1 - num2;
     }
 
-    public static double sqrt(double args1) {
-        return args1 * args1;
+    public static double sqrt(double num1) {
+        return num1 * num1;
     }
 
-    public static double pow(double args1, int i) {
+    public static double pow(double num1, int i) {
         double result = 1.0;
         if (i <= 0) {
             for (int j = 0; j >= -i; j++) {
-                result = (args1 / result);
+                result = (num1 / result);
             }
 
         } else {
             for (int j = 0; j <= i; j++) {
-                result = (args1 * result);
+                result = (num1 * result);
             }
         }
         return result;
