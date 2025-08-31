@@ -4,5 +4,6 @@ public class utilGitTest {
         System.out.println("qq");
 
     }
+int i=0;
 
 }
