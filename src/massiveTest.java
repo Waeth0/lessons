@@ -25,6 +25,8 @@ public class massiveTest {
             }
 
 
+
+
         }
         System.out.println("Task2 Индекс числа = " + indexTask2);
         System.out.println("Task2 Максимальное число массива = " + highTask2);
