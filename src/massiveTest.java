@@ -16,19 +16,35 @@ public class massiveTest {
 
 //дан массив целых чисел, найти наибольший элемент и его индекс
         int[] arrayTask2 = {13, 21, 5, 57, 96, 3};
-        int high = 0;
-        int index = 0;
+        int highTask2 = 0;
+        int indexTask2 = 0;
         for (int i = 0; i < arrayTask2.length; i++) {
-            if (arrayTask2[i] > high) {
-                high = arrayTask2[i];
-                index = i;
+            if (arrayTask2[i] > highTask2) {
+                highTask2 = arrayTask2[i];
+                indexTask2 = i;
             }
 
 
-        }
-        System.out.println("Task2 Индекс числа = " + index);
-        System.out.println("Task2 Максимальное число массива = " + high);
 
+
+        }
+        System.out.println("Task2 Индекс числа = " + indexTask2);
+        System.out.println("Task2 Максимальное число массива = " + highTask2);
+
+        //дан массив целых чисел, найти наименьший элемент и его индекс
+
+        int [] arrayTask3={65,32,99,105,11,3};
+        int minTask3=arrayTask3[0];
+        int indexTask3 =0;
+        for (int i = 0; i<arrayTask3.length ; i++) {
+            if (arrayTask3[i]<minTask3){
+                minTask3 = arrayTask3[i];
+                indexTask3=i;
+            }
+
+        }
+        System.out.println("Task3 Индекс числа = " + indexTask3);
+        System.out.println("Task3 Минимальное число массива = " + minTask3);
     }
 
 
