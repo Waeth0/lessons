@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class massiveTest {
     public static void main(String[] args) {
      /*  int [] array={1,3,7,4,2};
@@ -25,6 +23,8 @@ public class massiveTest {
                 highTask2 = arrayTask2[i];
                 indexTask2 = i;
             }
+
+
 
 
         }
