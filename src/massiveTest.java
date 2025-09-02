@@ -71,26 +71,47 @@ public class massiveTest {
         //Task5 посчитать количество четных чисел в массиве
         int [] arrayTask5={13,32,53,65,16,89,234};
         int number5 = 0;
-        int index5 =0;
-        int count =0;
-        for (int i = 0; i <arrayTask5.length ; i++) {
-            if (arrayTask5[i]%2==0){
-                number5=arrayTask5[i];
-                index5=i;
-                count++;
-                System.out.println("Task5 Индекс числа " +index5+ " Само число " +number5);
+        int index5 = 0;
+        int count5 = 0;
+        for (int i = 0; i < arrayTask5.length; i++) {
+            if (arrayTask5[i] % 2 == 0) {
+                number5 = arrayTask5[i];
+                index5 = i;
+                count5++;
+                System.out.println("Task5 Индекс числа " + index5 + " Само число " + number5);
 
             }
 
         }
-        System.out.println("Task5 Всего четных чисел "+count);
-
+        System.out.println("Task5 Всего четных чисел "+count5);
+        //Task6 Развернуть массив
         int [] arrayTask6={13,43,22,34,55,65};
         for (int i = arrayTask6.length-1; i >=0 ; i--) {
             System.out.print(arrayTask6[i]+ " ");
 
         }
-    }
-}
+        //Task7 Каждое четное число массива умножить на 2
+        int[] arrayTask7 = {5, 13, 234, 132, 999, 76, 43, 54, 22, 10};
+        int number7 = 0;
+        int index7 = 0;
+        int increase7 = 0;
+        for (int i = 0; i < arrayTask7.length; i++) {
+            if (arrayTask7[i] % 2 == 0) {
+                number7 = arrayTask7[i];
+                increase7 = number7 * 2;
+                System.out.println("четные числа = "+number7);
+                System.out.println("Четные числа *2 = "+increase7);
+            }
+        }
 
+        //Task8 Заполнить массив только четными числами, каждый второй элемент массива умножить на 2
+        int[] arrayTask8 = {2,4,8,6,10,16,12,14};
+        int number8=0;
+        int increase8=0;
+        for (int i = 1; i <arrayTask8.length ; i+=2) {
+            arrayTask8[i]*=2;
+            System.out.println(arrayTask8[i]);
+            }
+        }
+    }
 
