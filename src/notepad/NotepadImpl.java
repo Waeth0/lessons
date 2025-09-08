@@ -5,15 +5,16 @@ public class NotepadImpl implements Notepad {
 
     private String[] records;
 
-    public NotepadImpl(int recordslenght) {
-        this.records = new String[recordslenght];
+    public NotepadImpl(int recordsLength) {
+        this.records = new String[recordsLength];
     }
 
     @Override
     public String save(String record) {
         for (int i = 0; i < records.length; i++) {
-            if (records[i] == null) {
-                records[i] = record;
+            String currentRecord = records[i];
+            if (currentRecord == null) {
+                currentRecord = record;
                 break;
             }
         }
@@ -36,7 +37,10 @@ public class NotepadImpl implements Notepad {
     @Override
     public void showAll() {
         for (int i = 0; i < records.length; i++) {
-            System.out.println(records[i] + " ");
+            String record = records[i];
+            if (record != null) {
+                System.out.println(record + " ");
+            }
         }
         System.out.println();
     }
