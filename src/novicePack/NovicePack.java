@@ -12,18 +12,13 @@ public class NovicePack {
         suppliesList.add(new Erasier(1));
     }
 
-    public void showStarterKit(){
-        System.out.println("Стартовый набор ");
-        for(OfficeSupplies supplie: suppliesList){
-            System.out.println(supplie);
-
-        }
-
-
+    public void showStarterKit() {
+        System.out.println(suppliesList);
     }
 
 
 }
+
 
 
 
